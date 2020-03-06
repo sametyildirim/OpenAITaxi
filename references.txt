@@ -7,3 +7,5 @@ https://medium.com/emergent-future/simple-reinforcement-learning-with-tensorflow
 https://jaromiru.com/2016/09/27/lets-make-a-dqn-theory/#fn:5
 
 https://www.cs.toronto.edu/~vmnih/docs/dqn.pdf
+
+https://gym.openai.com/docs/
