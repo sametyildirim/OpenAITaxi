@@ -62,7 +62,8 @@ for _ in range(episodes):
 
         if reward == -10:
             penalties += 1
-
+        env.render()
+        sleep(.1)
         epochs += 1
 
     total_penalties += penalties
