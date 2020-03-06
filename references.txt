@@ -1,3 +1,7 @@
 https://www.learndatasci.com/tutorials/reinforcement-q-learning-scratch-python-openai-gym/
 
 https://becominghuman.ai/lets-build-an-atari-ai-part-1-dqn-df57e8ff3b26
+
+https://medium.com/emergent-future/simple-reinforcement-learning-with-tensorflow-part-0-q-learning-with-tables-and-neural-networks-d195264329d0
+
+https://jaromiru.com/2016/09/27/lets-make-a-dqn-theory/#fn:5
