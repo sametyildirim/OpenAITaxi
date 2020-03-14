@@ -2,7 +2,7 @@
 import gym
 import time
 # Create a breakout environment
-env = gym.make('BreakoutDeterministic-v4')
+env = gym.make('Riverraid-v0')
 # Reset it, returns the starting frame
 frame = env.reset()
 # Render
@@ -14,5 +14,5 @@ while not is_done:
   frame, reward, is_done, _ = env.step(env.action_space.sample())
   # Render
   env.render()
-  time.sleep(0.05)
+  time.sleep(0.03)
   env.close()
