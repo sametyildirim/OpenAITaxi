@@ -1,18 +1,32 @@
-# Import the gym module
-import gym
-import time
-# Create a breakout environment
-env = gym.make('BreakoutDeterministic-v4')
-# Reset it, returns the starting frame
-frame = env.reset()
-# Render
-env.render()
+"""
+Bot 2 -- Make a random, baseline agent for the SpaceInvaders game.
+"""
 
-is_done = False
-while not is_done:
-  # Perform a random action, returns the new frame, reward and whether the game is over
-  frame, reward, is_done, _ = env.step(env.action_space.sample())
-  # Render
-  env.render()
-  time.sleep(0.05)
-  env.close()
+import gym
+import random
+random.seed(0)  # make results reproducible
+
+num_episodes = 10
+
+
+def main():
+    env = gym.make('SpaceInvaders-v0')  # create the game
+    env.seed(0)  # make results reproducible
+    rewards = []
+
+    for _ in range(num_episodes):
+        env.reset()
+        episode_reward = 0
+        while True:
+            action = env.action_space.sample()
+            _, reward, done, _ = env.step(action)  # random action
+            episode_reward += reward
+            if done:
+                print('Reward: %d' % episode_reward)
+                rewards.append(episode_reward)
+                break
+    print('Average reward: %.2f' % (sum(rewards) / len(rewards)))
+
+
+if __name__ == '__main__':
+    main()
