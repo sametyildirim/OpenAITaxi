@@ -18,7 +18,7 @@ while not done:
 
     if reward == -10:
         penalties += 1
-    
+    #comment satırıdır  
     # Put each rendered frame into dict for animation
     frames.append({
         'frame': env.render(mode='ansi'),
