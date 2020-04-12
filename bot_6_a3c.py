@@ -13,11 +13,7 @@ from tensorpack.utils.stats import *
 from tensorpack.tfutils import symbolic_functions as symbf
 from tensorpack.tfutils.gradproc import MapGradient, SummaryGradient
 
-from tensorpack.RL import PreventStuckPlayer
-from tensorpack.RL import GymEnv
-from tensorpack.RL import MapPlayerState
-from tensorpack.RL import HistoryFramePlayer
-from tensorpack.RL import LimitLengthPlayer
+
 
 IMAGE_SIZE = (84, 84)
 FRAME_HISTORY = 4
